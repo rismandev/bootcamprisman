@@ -1,0 +1,86 @@
+/* CSS Style 
+
+Copyright 2019 
+Created by Risman Abdilah
+
+*/
+
+/* CSS Body */
+body {
+    margin:0px;
+    padding:0px;
+}
+
+/* Content CSS */
+#content{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 400px;
+    padding: 10px 10px 10px 30px;
+    background-color: #ffa;
+    border-radius: 8px;
+}
+
+/* Form CSS */
+.form-data {
+    margin: 8px auto;
+    margin-bottom: 25px;
+}
+.form-data label {
+    display: block;
+    margin-bottom: 10px;
+}
+.form-data .form-control {
+    min-width: 90%;
+    padding: 5px;
+    border:1px solid rgb(197, 197, 197);
+    border-radius: 3px;
+}
+.form-data .input-radio, .form-data .input-checkbox {
+    margin: 10px 10px 10px 0px;
+}
+.form-data span {
+    background-color: rgb(80, 200, 255);
+    padding: 6px 10px;
+    border-radius: 12px;
+    color:black;
+}
+.form-data .edit-label {
+    margin-left: 15px;
+    color: rgb(160, 160, 160) !important;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/* Utilities CSS Class */
+/* HREF */
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Background */
+.bg-hijau {
+    background:rgb(77, 255, 145) !important;
+}
+.bg-orange {
+    background:rgb(255, 175, 99) !important;
+}
+
+/* Button */
+.button {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 6px;
+    cursor: pointer;
+}
+.button:hover{
+    background: rgb(80, 80, 79);
+    color: #fff;
+}
+.button-biru {
+    background: rgb(75, 123, 255);
+    color: #fff;
+}
