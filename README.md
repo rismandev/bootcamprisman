@@ -1,4 +1,4 @@
-# bootcamprisman
+# Risman Abdilah
 Jawaban Technical Test Bootcamp Dumbways.id
 
 Alhamdulillah, Akhirnya saya menyelesaikan Test. Meskipun Belum Sempurna, Tetapi saya telah berusaha.
