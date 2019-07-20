@@ -1,5 +1,6 @@
 <?php
 
+// Buat Class
 class HitungSalaman
 {
     // Fungsi Hitung Jumlah Satu orang Salaman
