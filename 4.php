@@ -6,20 +6,21 @@ class HitungSalaman
     {
         return $satuOrangSalaman =  $jumlahOrang - 1;
     }
-    function semuaOrang($jumlahSalaman)
+    function semuaOrang($jumlahSalaman, $jmlOrg)
     {
-        return $semuaOrangSalaman = $jumlahSalaman * 2;
+        $semuaOrangSalaman = $jumlahSalaman * $jmlOrg;
+        return $semuaOrangSalaman / 2;
     }
 }
 
 $hitungSalaman = new HitungSalaman();
 
 // Menentukan Jumlah orang
-$jmlOrg = 40;
+$jmlOrg = 80;
 
 $satuOrang = $hitungSalaman->satuOrang($jmlOrg);
-$semuaOrang = $hitungSalaman->semuaOrang($satuOrang);
+$semuaOrang = $hitungSalaman->semuaOrang($satuOrang, $jmlOrg);
 
 // Tampilkan hasil
-echo "Jumlah orang : " . $jmlOrg . "<br>Setiap Orang " . $satuOrang . "x Salaman";
-echo "<br>Jumlah Salaman yang terjadi : " . $semuaOrang;
+echo "Jumlah orang : " . $jmlOrg . "<br>Satu Orang " . $satuOrang . " kali Salaman";
+echo "<br>Jumlah Salaman yang terjadi : " . $semuaOrang . " Salaman";
