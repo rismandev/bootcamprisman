@@ -1,0 +1,47 @@
+-- Copyright 2019 Created by Risman Abdilah
+-- Pastikan Sudah mempunyai database
+-- Masuk ke database
+
+-- Membuat Table Cities
+CREATE TABLE cities(
+    id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(128)
+);
+
+-- Membuat Table Biodata
+CREATE TABLE biodata(
+    id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    full_name VARCHAR(128),
+    date_of_birth DATE,
+    place_of_birth_id INT(11),
+    phone_number VARCHAR(128),
+    address TEXT,
+    last_education ENUM('SMP','SMA','SMK','D3','S1'),
+    religion ENUM('Islam','Hindu','Budha','Kristen','Katolik'),
+    hobby SET('renang','game','ghibah','programming','mancing')
+);
+
+-- Menambahkan Foreign Key
+ALTER TABLE biodata ADD FOREIGN KEY(place_of_birth_id) REFERENCES cities(id) ON DELETE CASCADE;
+
+-- Menambahkan Data Ke Table Cities
+INSERT INTO cities VALUES
+('','Jakarta'),
+('','Bandung'),
+('','Majalengka'),
+('','Bekasi');
+
+-- Menambahkan Data Ke Table Biodata
+INSERT INTO biodata VALUES
+('','Lucinta Luna','1992-07-12','1','081111','','S1','Kristen','renang, game'),
+('','Satrio','2001-07-21','1','082222','','SMA','Islam','ghibah, programming'),
+('','Syahrini','1989-01-01','2','083333','','S1','Islam','');
+
+-- Menampilkan Seluruh Data
+SELECT biodata.id, full_name, place_of_birth_id, cities.name, date_of_birth, phone_number, last_education, religion, hobby FROM biodata JOIN cities USING(id);
+
+-- EDIT Data Berdasarkan Id Biodata
+UPDATE biodata SET full_name = 'Satrio Baja Hitam' WHERE id = '2';
+
+-- Hapus Data Berdasarkan ID Biodata
+DELETE FROM biodata WHERE id = '2';
