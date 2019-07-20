@@ -3,7 +3,7 @@ Jawaban Technical Test Bootcamp Dumbways.id
 
 Alhamdulillah, Akhirnya saya menyelesaikan Test. Meskipun Belum Sempurna, Tetapi saya telah berusaha.
 
-Dalam Hal ini saya menggunakan Bahasa Pemrograman PHP, JavaScript
+Dalam Hal ini saya menggunakan Bahasa Pemrograman PHP
 
 Saya Belajar dari berbagai Sumber. antara lain :
 - W3Schools : https://www.w3schools.com/css/
